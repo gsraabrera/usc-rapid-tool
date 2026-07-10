@@ -55,7 +55,7 @@ $admin = DB::Query($adminQuery);
 $data = $admin->fetchAssoc();
     // Check if the table and field exist in the cache
 //	if($data["ext_security_id"] === '' || $data["ext_security_id"] === null || $values["id"] !== $data["ext_security_id"]){
-		DB::Query("UPDATE our_rapid_users SET ext_security_id='".$values["id"]."' where email='".$values["email"]."'");
+		DB::Query("UPDATE usc_rapid_users SET ext_security_id='".$values["id"]."' where email='".$values["email"]."'");
 	//}
 if($data){
 $_SESSION["group_id"] = $data["groupid"];
