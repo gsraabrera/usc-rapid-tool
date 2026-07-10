@@ -354,7 +354,6 @@ class DB
 		$dalTables[ $conn->connId ] = array();
 		if( "financialslatestDbatlocalhost" == $conn->connId )
 		{
-			$dalTables[$conn->connId][] = array("name" => "academic_specializations", "varname" => "financialslatestDbatlocalhost_public_academic_specializations", "altvarname" => "academic_specializations", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 			$dalTables[$conn->connId][] = array("name" => "classes", "varname" => "financialslatestDbatlocalhost_public_classes", "altvarname" => "classes", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 			$dalTables[$conn->connId][] = array("name" => "student_enlist_classes", "varname" => "financialslatestDbatlocalhost_public_student_enlist_classes", "altvarname" => "student_enlist_classes", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 			$dalTables[$conn->connId][] = array("name" => "student_enlistments", "varname" => "financialslatestDbatlocalhost_public_student_enlistments", "altvarname" => "student_enlistments", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");

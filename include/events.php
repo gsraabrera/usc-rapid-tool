@@ -217,10 +217,10 @@ function BeforeShowLogin(&$xt, &$templatefile, $pageObject)
 if (isset($_POST['term'])) {
     $_SESSION['term_id'] = $_POST['term'];
 }else{
-		$rs = DB::Query("SELECT term_id,concat(term,' ', ay) term
+		$rs = DB::Query("SELECT se.term_id,concat(term,' ', ay) term
         FROM student_enlistments se 
 				join student_terms st on st.term_id = se.term_id and term_type = 'Semestral'
-        GROUP BY se.term_id
+        GROUP BY se.term_id,term,ay
         ORDER BY se.term_id DESC
         LIMIT 1");
 		$data=$rs->fetchAssoc();

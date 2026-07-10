@@ -25,9 +25,9 @@ if(mlang_getcurrentlang()=="English")
 	$fieldToolTipsusc_rapid_users["English"] = array();
 	$placeHoldersusc_rapid_users["English"] = array();
 	$pageTitlesusc_rapid_users["English"] = array();
-	$fieldLabelsusc_rapid_users["English"]["ID"] = "ID";
-	$fieldToolTipsusc_rapid_users["English"]["ID"] = "";
-	$placeHoldersusc_rapid_users["English"]["ID"] = "";
+	$fieldLabelsusc_rapid_users["English"]["id"] = "ID";
+	$fieldToolTipsusc_rapid_users["English"]["id"] = "";
+	$placeHoldersusc_rapid_users["English"]["id"] = "";
 	$fieldLabelsusc_rapid_users["English"]["username"] = "Username";
 	$fieldToolTipsusc_rapid_users["English"]["username"] = "";
 	$placeHoldersusc_rapid_users["English"]["username"] = "";
@@ -166,7 +166,7 @@ $tdatausc_rapid_users[".filterFields"] = array();
 $tdatausc_rapid_users[".requiredSearchFields"] = array();
 
 $tdatausc_rapid_users[".googleLikeFields"] = array();
-$tdatausc_rapid_users[".googleLikeFields"][] = "ID";
+$tdatausc_rapid_users[".googleLikeFields"][] = "id";
 $tdatausc_rapid_users[".googleLikeFields"][] = "username";
 $tdatausc_rapid_users[".googleLikeFields"][] = "password";
 $tdatausc_rapid_users[".googleLikeFields"][] = "email";
@@ -207,7 +207,7 @@ $tdatausc_rapid_users[".strOrderBy"] = $tstrOrderBy;
 $tdatausc_rapid_users[".orderindexes"] = array();
 
 
-$tdatausc_rapid_users[".sqlHead"] = "SELECT \"ID\",  	username,  	password,  	email,  	fullname,  	groupid,  	active,  	ext_security_id";
+$tdatausc_rapid_users[".sqlHead"] = "SELECT id,  	username,  	password,  	email,  	fullname,  	groupid,  	active,  	ext_security_id";
 $tdatausc_rapid_users[".sqlFrom"] = "FROM \"public\".usc_rapid_users";
 $tdatausc_rapid_users[".sqlWhereExpr"] = "";
 $tdatausc_rapid_users[".sqlTail"] = "";
@@ -246,7 +246,7 @@ $tdatausc_rapid_users[".arrGroupsPerPage"] = $arrGPP;
 $tdatausc_rapid_users[".highlightSearchResults"] = true;
 
 $tableKeysusc_rapid_users = array();
-$tableKeysusc_rapid_users[] = "ID";
+$tableKeysusc_rapid_users[] = "id";
 $tdatausc_rapid_users[".Keys"] = $tableKeysusc_rapid_users;
 
 
@@ -255,29 +255,28 @@ $tdatausc_rapid_users[".hideMobileList"] = array();
 
 
 
-//	ID
+//	id
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 1;
-	$fdata["strName"] = "ID";
-	$fdata["GoodName"] = "ID";
+	$fdata["strName"] = "id";
+	$fdata["GoodName"] = "id";
 	$fdata["ownerTable"] = "public.usc_rapid_users";
-	$fdata["Label"] = GetFieldLabel("public_usc_rapid_users","ID");
+	$fdata["Label"] = GetFieldLabel("public_usc_rapid_users","id");
 	$fdata["FieldType"] = 3;
 
 
-		$fdata["AutoInc"] = true;
-
+	
 	
 			
 
-		$fdata["strField"] = "ID";
+		$fdata["strField"] = "id";
 
 		$fdata["sourceSingle"] = "ID";
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "\"ID\"";
+	$fdata["FullName"] = "id";
 
 	
 	
@@ -395,8 +394,8 @@ $tdatausc_rapid_users[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatausc_rapid_users["ID"] = $fdata;
-		$tdatausc_rapid_users[".searchableFields"][] = "ID";
+	$tdatausc_rapid_users["id"] = $fdata;
+		$tdatausc_rapid_users[".searchableFields"][] = "id";
 //	username
 //	Custom field settings
 	$fdata = array();
@@ -1407,7 +1406,7 @@ function createSqlQuery_usc_rapid_users()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "\"ID\",  	username,  	password,  	email,  	fullname,  	groupid,  	active,  	ext_security_id";
+$proto0["m_strFieldList"] = "id,  	username,  	password,  	email,  	fullname,  	groupid,  	active,  	ext_security_id";
 $proto0["m_strFrom"] = "FROM \"public\".usc_rapid_users";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1449,12 +1448,12 @@ $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
 						$proto6=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ID",
+	"m_strName" => "id",
 	"m_strTable" => "public.usc_rapid_users",
 	"m_srcTableName" => "public.usc_rapid_users"
 ));
 
-$proto6["m_sql"] = "\"ID\"";
+$proto6["m_sql"] = "id";
 $proto6["m_srcTableName"] = "public.usc_rapid_users";
 $proto6["m_expr"]=$obj;
 $proto6["m_alias"] = "";
@@ -1566,7 +1565,7 @@ $proto22["m_link"] = "SQLL_MAIN";
 $proto23["m_strName"] = "public.usc_rapid_users";
 $proto23["m_srcTableName"] = "public.usc_rapid_users";
 $proto23["m_columns"] = array();
-$proto23["m_columns"][] = "ID";
+$proto23["m_columns"][] = "id";
 $proto23["m_columns"][] = "username";
 $proto23["m_columns"][] = "password";
 $proto23["m_columns"][] = "email";

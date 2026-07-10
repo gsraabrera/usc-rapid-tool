@@ -722,7 +722,7 @@ $cUserGroupField = "";
 $cEmailField = "email";
 $cUserpicField = "";
 $loginKeyFields= array();
-$loginKeyFields[] = "ID";
+$loginKeyFields[] = "id";
 
 //	legacy use only
 $cKeyFields = $loginKeyFields;
@@ -753,9 +753,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "9_1783311541";
+$projectBuildKey = "16_1783471811";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "9";
+$projectBuildNumber = "16";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -920,7 +920,7 @@ Security::autoLoginAsGuest();
 Security::updateCSRFCookie();
 
 
-$isUseRTEBasic = false;
+$isUseRTEBasic = true;
 
 $isUseRTECK = false;
 
