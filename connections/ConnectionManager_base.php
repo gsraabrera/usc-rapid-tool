@@ -243,7 +243,7 @@ class ConnectionManager_Base
 	protected function _setTablesConnectionIds()
 	{
 		$connectionsIds = array();
-		$connectionsIds["student_enlistment_chart"] = "financialslatestDbatlocalhost";
+		$connectionsIds["Enrollment Status Distribution"] = "financialslatestDbatlocalhost";
 		$connectionsIds["public.usc_rapid_users"] = "financialslatestDbatlocalhost";
 		$connectionsIds["enrollment_count_by_unit_and_batch"] = "financialslatestDbatlocalhost";
 

@@ -74,13 +74,13 @@ $dashField = array();
 $dashField[] = array( "table"=>"enrollment_count_by_unit_and_batch", "field"=>"term_id" );
 $tdatadashboard[".searchFields"]["enrollment_count_by_unit_and_batch_term_id"] = $dashField;
 $dashField = array();
-$dashField[] = array( "table"=>"student_enlistment_chart", "field"=>"status" );
+$dashField[] = array( "table"=>"Enrollment Status Distribution", "field"=>"status" );
 $tdatadashboard[".searchFields"]["student_enlistment_chart_status"] = $dashField;
 $dashField = array();
-$dashField[] = array( "table"=>"student_enlistment_chart", "field"=>"term_id" );
+$dashField[] = array( "table"=>"Enrollment Status Distribution", "field"=>"term_id" );
 $tdatadashboard[".searchFields"]["student_enlistment_chart_term_id"] = $dashField;
 $dashField = array();
-$dashField[] = array( "table"=>"student_enlistment_chart", "field"=>"count" );
+$dashField[] = array( "table"=>"Enrollment Status Distribution", "field"=>"count" );
 $tdatadashboard[".searchFields"]["student_enlistment_chart_count"] = $dashField;
 
 // all search fields
@@ -128,7 +128,7 @@ $tdatadashboard[".dashElements"] = array();
 	
 
 	$tdatadashboard[".dashElements"][] = $dbelement;
-	$dbelement = array( "elementName" => "student_enlistment_chart_chart", "table" => "student_enlistment_chart",
+	$dbelement = array( "elementName" => "Enrollment_Status_Distribution_chart", "table" => "Enrollment Status Distribution",
 		 "pageName" => "","type" => 1);
 	$dbelement["cellName"] = "";
 

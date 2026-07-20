@@ -3580,8 +3580,8 @@ function fillProjectEntites()
 		return;
 	$projectEntities[ "Dashboard" ] = array( "url" => "dashboard", "type" => 4 );
 	$projectEntitiesReverse[ "dashboard" ] = "Dashboard";
-	$projectEntities[ "student_enlistment_chart" ] = array( "url" => "student_enlistment_chart", "type" => 3 );
-	$projectEntitiesReverse[ "student_enlistment_chart" ] = "student_enlistment_chart";
+	$projectEntities[ "Enrollment Status Distribution" ] = array( "url" => "enrollment_status_distribution", "type" => 3 );
+	$projectEntitiesReverse[ "enrollment_status_distribution" ] = "Enrollment Status Distribution";
 	$projectEntities[ "public.usc_rapid_users" ] = array( "url" => "usc_rapid_users", "type" => 0 );
 	$projectEntitiesReverse[ "usc_rapid_users" ] = "public.usc_rapid_users";
 	$projectEntities[ "enrollment_count_by_unit_and_batch" ] = array( "url" => "enrollment_count_by_unit_and_batch", "type" => 1 );

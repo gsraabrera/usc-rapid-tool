@@ -634,7 +634,7 @@ $globalSettings["LandingURL"] = "";
 $globalSettings["LandingPageId"] = "";
 
 $globalSettings["ProjectLogo"] = array();
-$globalSettings["ProjectLogo"]["English"] = "USC RAPID TOOL";
+$globalSettings["ProjectLogo"]["English"] = "USC AMIS TOOL";
 
 $globalSettings["CookieBanner"] = array();
 
@@ -753,9 +753,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "17_1783471811";
+$projectBuildKey = "22_1783471811";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "17";
+$projectBuildNumber = "22";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -782,7 +782,7 @@ $tableCaptions = array();
 $tableCaptions["English"] = array();
 $tableCaptions["English"][""] = "";
 $tableCaptions["English"]["Dashboard"] = "Dashboard";
-$tableCaptions["English"]["student_enlistment_chart"] = "Student Enlistment Chart";
+$tableCaptions["English"]["Enrollment_Status_Distribution"] = "Enrollment Status Distribution";
 $tableCaptions["English"]["public_usc_rapid_users"] = "Usc Rapid Users";
 $tableCaptions["English"]["enrollment_count_by_unit_and_batch"] = "Enrollment Count By Unit And Batch";
 

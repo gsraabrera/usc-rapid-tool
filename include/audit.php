@@ -360,7 +360,7 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="student_enlistment_chart")
+		if($table=="Enrollment Status Distribution")
 		{
 			return false;
 		}
@@ -684,7 +684,7 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="student_enlistment_chart")
+		if($table=="Enrollment Status Distribution")
 		{
 			return false;
 		}

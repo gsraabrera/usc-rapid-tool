@@ -205,7 +205,7 @@ function checkTableName($shortTName )
 
 	if ("dashboard" == $shortTName )
 		return true;
-	if ("student_enlistment_chart" == $shortTName )
+	if ("enrollment_status_distribution" == $shortTName )
 		return true;
 	if ("usc_rapid_users" == $shortTName )
 		return true;
@@ -272,12 +272,12 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("student_enlistment_chart");
+		$strPerm = GetUserPermissions("Enrollment Status Distribution");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
 	}
 	if( $tableAvailable ) {
-		$arr[]="student_enlistment_chart";
+		$arr[]="Enrollment Status Distribution";
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
@@ -307,7 +307,7 @@ function GetTablesListWithoutSecurity()
 {
 	$arr = array();
 	$arr[]="Dashboard";
-	$arr[]="student_enlistment_chart";
+	$arr[]="Enrollment Status Distribution";
 	$arr[]="public.usc_rapid_users";
 	$arr[]="enrollment_count_by_unit_and_batch";
 	return $arr;
@@ -353,7 +353,7 @@ function GetFullFieldName($field, $table = "", $addAs = true, $connection = null
  */
 function GetChartType($shorttable)
 {
-	if($shorttable=="student_enlistment_chart")
+	if($shorttable=="enrollment_status_distribution")
 		return "2DPie";
 	return "";
 }
@@ -939,7 +939,7 @@ function GetUserPermissionsStatic( $table )
 		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="student_enlistment_chart" )
+	if( $table=="Enrollment Status Distribution" )
 	{
 //	default permissions
 		// grant all by default

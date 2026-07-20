@@ -136,10 +136,10 @@ class XTempl_Base
 
 		if( !$hideAddedCharts ) //#9607 1. Temporary fix
 		{
-			$this->assign_function("student_enlistment_chart_chart","xt_showchart",
+			$this->assign_function("enrollment_status_distribution_chart","xt_showchart",
 			array(
-				"chartName"=>"student_enlistment_chart",
-				"table"=>"student_enlistment_chart",
+				"chartName"=>"enrollment_status_distribution",
+				"table"=>"Enrollment Status Distribution",
 				"ctype"=>"2DPie"));
 		}
 
