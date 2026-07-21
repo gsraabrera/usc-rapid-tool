@@ -1334,7 +1334,8 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
 	>
 
 	
@@ -1349,7 +1350,8 @@
 		 r-ori-vert		 {$term_id_class}	"
 
 	
-	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1364,7 +1366,8 @@
 		 r-ori-vert		 {$career_class}	"
 
 	
-	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1379,7 +1382,8 @@
 		 r-ori-vert		 {$batch_class}	"
 
 	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1394,7 +1398,8 @@
 		 r-ori-vert		 {$0_units_class}	"
 
 	
-	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1409,7 +1414,8 @@
 		 r-ori-vert		 {$1_2_units_class}	"
 
 	
-	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1424,7 +1430,8 @@
 		 r-ori-vert		 {$3_5_units_class}	"
 
 	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1439,7 +1446,8 @@
 		 r-ori-vert		 {$6_8_units_class}	"
 
 	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1454,7 +1462,8 @@
 		 r-ori-vert		 {$9_11_units_class}	"
 
 	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1469,7 +1478,8 @@
 		 r-ori-vert		 {$12_14_units_class}	"
 
 	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1484,7 +1494,8 @@
 		 r-ori-vert		 {$15_units_above_class}	"
 
 	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"		data-control-cell
+	
 	>
 
 	
@@ -1498,9 +1509,19 @@
 	class="
 		 r-ori-vert		 {$total_class}	"
 
+			data-field="total"
 	
 	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="enrollment_count_by_unit_and_batch_list"	
 	>
+
+	 
+		{BEGIN total_fieldfootercolumn}
+{BEGIN total_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="total" data-fieldname="total">
+	Total	{$total_total}
+</span>
+{END total_showtotal}
+{END total_fieldfootercolumn}
 
 	
 	</td>
