@@ -372,6 +372,10 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="Enrollment Distribution by Home College and Total Number of Units Enrolled")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -693,6 +697,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="enrollment_count_by_unit_and_batch")
+		{
+			return false;
+		}
+		if($table=="Enrollment Distribution by Home College and Total Number of Units Enrolled")
 		{
 			return false;
 		}

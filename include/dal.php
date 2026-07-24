@@ -50,6 +50,7 @@ class tDAL
 	var $tblfinancialslatestDbatlocalhost_public_classes;
 	var $tblfinancialslatestDbatlocalhost_public_student_enlist_classes;
 	var $tblfinancialslatestDbatlocalhost_public_student_enlistments;
+	var $tblfinancialslatestDbatlocalhost_public_student_program_history_view;
 	var $tblfinancialslatestDbatlocalhost_public_student_program_records;
 	var $tblfinancialslatestDbatlocalhost_public_student_terms;
 	var $tblfinancialslatestDbatlocalhost_public_usc_rapid_users;
@@ -63,6 +64,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "classes", "varname" => "financialslatestDbatlocalhost_public_classes", "altvarname" => "classes", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 		$this->lstTables[] = array("name" => "student_enlist_classes", "varname" => "financialslatestDbatlocalhost_public_student_enlist_classes", "altvarname" => "student_enlist_classes", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 		$this->lstTables[] = array("name" => "student_enlistments", "varname" => "financialslatestDbatlocalhost_public_student_enlistments", "altvarname" => "student_enlistments", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
+		$this->lstTables[] = array("name" => "student_program_history_view", "varname" => "financialslatestDbatlocalhost_public_student_program_history_view", "altvarname" => "student_program_history_view", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 		$this->lstTables[] = array("name" => "student_program_records", "varname" => "financialslatestDbatlocalhost_public_student_program_records", "altvarname" => "student_program_records", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 		$this->lstTables[] = array("name" => "student_terms", "varname" => "financialslatestDbatlocalhost_public_student_terms", "altvarname" => "student_terms", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");
 		$this->lstTables[] = array("name" => "usc_rapid_users", "varname" => "financialslatestDbatlocalhost_public_usc_rapid_users", "altvarname" => "usc_rapid_users", "connId" => "financialslatestDbatlocalhost", "schema" => "public", "connName" => "financialslatestDb at localhos");

@@ -386,6 +386,8 @@ class Chart
 			return true;
 		if("public.student_enlistments" == $this->chrt_array['tables'][0])
 			return true;
+		if("public.student_enlist_classes" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 

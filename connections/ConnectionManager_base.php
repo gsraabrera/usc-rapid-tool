@@ -246,6 +246,7 @@ class ConnectionManager_Base
 		$connectionsIds["Enrollment Status Distribution"] = "financialslatestDbatlocalhost";
 		$connectionsIds["public.usc_rapid_users"] = "financialslatestDbatlocalhost";
 		$connectionsIds["enrollment_count_by_unit_and_batch"] = "financialslatestDbatlocalhost";
+		$connectionsIds["Enrollment Distribution by Home College and Total Number of Units Enrolled"] = "financialslatestDbatlocalhost";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

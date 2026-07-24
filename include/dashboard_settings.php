@@ -35,6 +35,16 @@ if(mlang_getcurrentlang()=="English")
 	$fieldLabelsdashboard["English"]["student_enlistment_chart_status"] = "Status";
 	$fieldLabelsdashboard["English"]["student_enlistment_chart_term_id"] = "Term Id";
 	$fieldLabelsdashboard["English"]["student_enlistment_chart_count"] = "Count";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_acad_group"] = "College";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_0_units"] = "0 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_1_2_units"] = "1-2 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_3_5_units"] = "3-5 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_6_8_units"] = "6-8 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_9_11_units"] = "9-11 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_12_14_units"] = "12-14 Units";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_15_units_above"] = "15 units above";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_total"] = "Total";
+	$fieldLabelsdashboard["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_term_id"] = "Term Id";
 }
 
 /*
@@ -82,6 +92,36 @@ $tdatadashboard[".searchFields"]["student_enlistment_chart_term_id"] = $dashFiel
 $dashField = array();
 $dashField[] = array( "table"=>"Enrollment Status Distribution", "field"=>"count" );
 $tdatadashboard[".searchFields"]["student_enlistment_chart_count"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"acad_group" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_acad_group"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"0 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_0_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"1-2 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_1_2_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"3-5 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_3_5_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"6-8 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_6_8_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"9-11 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_9_11_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"12-14 units" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_12_14_units"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"15 units above" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_15_units_above"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"total" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_total"] = $dashField;
+$dashField = array();
+$dashField[] = array( "table"=>"Enrollment Distribution by Home College and Total Number of Units Enrolled", "field"=>"term_id" );
+$tdatadashboard[".searchFields"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_term_id"] = $dashField;
 
 // all search fields
 $tdatadashboard[".allSearchFields"] = array();
@@ -99,6 +139,16 @@ $tdatadashboard[".allSearchFields"][] = "enrollment_count_by_unit_and_batch_term
 $tdatadashboard[".allSearchFields"][] = "student_enlistment_chart_status";
 $tdatadashboard[".allSearchFields"][] = "student_enlistment_chart_term_id";
 $tdatadashboard[".allSearchFields"][] = "student_enlistment_chart_count";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_acad_group";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_0_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_1_2_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_3_5_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_6_8_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_9_11_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_12_14_units";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_15_units_above";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_total";
+$tdatadashboard[".allSearchFields"][] = "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_term_id";
 
 // good like search fields
 $tdatadashboard[".googleLikeFields"] = array();
@@ -136,6 +186,16 @@ $tdatadashboard[".dashElements"] = array();
 		$dbelement["width"] = 800;
 		$dbelement["height"] = 600;
 
+
+	$tdatadashboard[".dashElements"][] = $dbelement;
+	$dbelement = array( "elementName" => "Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled_grid", "table" => "Enrollment Distribution by Home College and Total Number of Units Enrolled",
+		 "pageName" => "","type" => 0);
+	$dbelement["cellName"] = "";
+
+		$dbelement["reload"] = 60;
+		$dbelement["width"] = 800;
+		$dbelement["height"] = 600;
+	
 
 	$tdatadashboard[".dashElements"][] = $dbelement;
 */

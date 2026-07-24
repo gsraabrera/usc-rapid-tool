@@ -753,9 +753,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "23_1783471811";
+$projectBuildKey = "28_1783471811";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "23";
+$projectBuildNumber = "28";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -784,7 +784,8 @@ $tableCaptions["English"][""] = "";
 $tableCaptions["English"]["Dashboard"] = "Dashboard";
 $tableCaptions["English"]["Enrollment_Status_Distribution"] = "Enrollment Status Distribution";
 $tableCaptions["English"]["public_usc_rapid_users"] = "Usc Rapid Users";
-$tableCaptions["English"]["enrollment_count_by_unit_and_batch"] = "Enrollment Count By Unit And Batch";
+$tableCaptions["English"]["enrollment_count_by_unit_and_batch"] = "Enrollment Distribution by Batch and Total Number of Units Enrolled";
+$tableCaptions["English"]["Enrollment_Distribution_by_Home_College_and_Total_Number_of_Units_Enrolled"] = "Enrollment Distribution by Home College and Total Number of Units Enrolled";
 
 
 $globalEvents = new class_GlobalEvents;
