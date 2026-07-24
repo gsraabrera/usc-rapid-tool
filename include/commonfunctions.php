@@ -211,6 +211,8 @@ function checkTableName($shortTName )
 		return true;
 	if ("enrollment_count_by_unit_and_batch" == $shortTName )
 		return true;
+	if ("enrollment_distribution_by_home_college_and_total_number_of_units_enrolled" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -297,6 +299,15 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="enrollment_count_by_unit_and_batch";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("Enrollment Distribution by Home College and Total Number of Units Enrolled");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="Enrollment Distribution by Home College and Total Number of Units Enrolled";
+	}
 	return $arr;
 }
 
@@ -310,6 +321,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="Enrollment Status Distribution";
 	$arr[]="public.usc_rapid_users";
 	$arr[]="enrollment_count_by_unit_and_batch";
+	$arr[]="Enrollment Distribution by Home College and Total Number of Units Enrolled";
 	return $arr;
 }
 
@@ -952,6 +964,12 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="enrollment_count_by_unit_and_batch" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="Enrollment Distribution by Home College and Total Number of Units Enrolled" )
 	{
 //	default permissions
 		// grant all by default
